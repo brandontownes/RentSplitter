@@ -5,7 +5,14 @@
 print("Welcome to Rent Share v.1!", "The Millennial way to split bills", '\n')
 
 # inputs
-p1 = input("Please enter the Boyfriend's name: ")
+
+# Convert variables into a dictionary -  personIncome = name : income
+# https://automatetheboringstuff.com/chapter4/
+
+#p1 = input("Please enter the Boyfriend's name: ")
+
+print("Please enter the Boyfriend's name: ")
+p1 = input()
 p1Income = float(input("How much do you make a month? "))
 
 p2 = input("Now enter the Girlfriend's name: ")
@@ -16,6 +23,7 @@ totalRent = float(input("Enter the total bills for this month: "))
 # Function
 
 
+# convert this to a for loop - iteriate over each key, take the value and % by the totalRent variable.
 def RentShare():
     totalIncome = p1Income + p2Income
     p1Percent = p1Income / totalIncome
